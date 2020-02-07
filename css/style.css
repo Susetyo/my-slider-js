@@ -1,0 +1,28 @@
+.container{
+  position: relative;
+  height: 500px;
+  margin: 20px;
+  background-color: aqua;
+  box-sizing: border-box;
+}
+
+@keyframes animate{
+  from{top:0; left:0;}
+  to{top:100px;left:100px}
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  100% {
+    background-color: #FF4136;
+  }
+}
+
+.animate{
+  position: absolute;
+  animation: 
+    animate 10s steps(10) infinite alternate,
+    pulse 5s infinite;
+}
